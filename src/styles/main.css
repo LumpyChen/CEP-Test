@@ -1,0 +1,148 @@
+/* fallback */
+html, body, #app, #app > div {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --header-height: 60px;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  background: #f2f4f8;
+  /* line-height: 1.6; */
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+pre {
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+}
+
+button {
+  font-size: 14px;
+  border: none;
+  line-height: 32px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 3px;
+
+  &:hover {
+    background: #f0f0f0;
+  }
+
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -2px
+  }
+}
+
+button.primary {
+  background: #006bff;
+  color: #fff;
+
+  &:hover {
+    background: #006bffdd;
+  }
+}
+
+button + button {
+  margin-left: 16px;
+}
+
+input, textarea {
+  width: 320px;
+  padding: 0 8px;
+  line-height: 32px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius:3px;
+  font-family: inherit;
+  
+  &:focus {
+    outline: none;
+    border-color: #006bff;
+  }
+}
+
+textarea {
+  padding: 4px 8px;
+  line-height: 22px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: #006bff;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  line-height: 1;
+  vertical-align: -0.2em;
+  overflow: hidden;
+  font-family: 'Material Icons';
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * animations
+ */
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: 1s ease-in-out 0.2s infinite headShake;
+  outline: 2px solid #4a7ffa;
+}
+
+button {
+  background-color:  #4a7ffa;
+  border-radius: 2px;
+  margin: 10px 5px;
+}
+
+.area {
+  margin: 10px;
+}
