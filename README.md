@@ -28,8 +28,8 @@ yarn start
 
 为了引入CEP扩展，我们把build生成的CEP扩展的目录放到Photoshop指定的位置：
 
-mac：`~/Library/Application Support/Adobe/CEP/extensions/com.cep.test`
-win：`{Photoshop安装路径}\Required\CEP\extensions\com.cep.test`
+* mac：`~/Library/Application Support/Adobe/CEP/extensions/com.cep.test`
+* win：`{Photoshop安装路径}\Required\CEP\extensions\com.cep.test`
 
 ## 运行
 
